@@ -7,16 +7,131 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+
+<body>
+    <div class="jumbotron">
+      <h1 class="display-4">Pokeweb!</h1>
+    </div>
+
+    <div class="container">
+        <div class="d-flex">
+            <div class="col-sm-4">
+                <h2 class="display-5">Pokedex</h2>
+                <p>Conoce todos los pokemones registrados</p>
+            </div>
+
+            <div class="col-sm-4">
+                <h2 class="display-5">Tipos de pokemon</h2>
+                <p>Elemento principal de cada pokemon</p>
+            </div>
+            <div class="col-sm-4">
+                <h2 class="display-5">Legendarios</h2>
+                <p>Pokemones legendarios conocidos</p>
+            </div>
+        </div>
+
+        <hr> <!-- Línea divisora-->
+
+        <!-- flex-wrap ajusta los elementos dentro del ancho del contenedor -->
+        <!-- flex-row-reverse elementos de izquierda a derecha-->
+        <div class="d-flex flex-wrap flex-row-reverse" >
+            <!-- justify-content-between sirve para, si el contenido no cubre todo el alto, el espacio en blanco se coloca
+                 en medio del contenido -->
+            <div class="poke-card d-flex flex-column justify-content-between">
+                <div>
+                    <h3>Charmander</h3>
+                    <p> Jotho de tipo Fuego</p>
+                </div>
+                <div>
+                    <button class="btn btn-dark btn-reserva">Conócelo</button>
+                </div>
+            </div>
+
+            <div class="poke-card d-flex flex-column justify-content-between"> 
+                <div>
+                    <h3>Bulbasaur</h3>
+                    <p> Jotho de tipo Planta</p>
+                </div>
+                <div>
+                    <button class="btn btn-dark btn-reserva">Conócelo</button>
+                </div>
+            </div>
+
+            <div class="poke-card d-flex flex-column justify-content-between">
+                <div>
+                    <h3>Squirtle</h3>
+                    <p> Jotho. Mejor conocido como vamo a calmarno de tipo Agua </p>
+                </div>
+                <div>
+                    <button class="btn btn-dark btn-reserva">Conócelo</button>
+                </div>
+            </div>
+
+            <div class="poke-card d-flex flex-column justify-content-between">
+                <div>
+                    <h3>Pikachu</h3>
+                    <p> Jotho. Este es el primer pokemon y compañero de tipo Eléctrico del protagonista de Pokemon Ash </p>
+                </div>
+                <div>
+                    <button class="btn btn-dark btn-reserva">Conócelo</button>
+                </div>
+            </div>
+
+            <div class="poke-card d-flex flex-column justify-content-between">
+                <h3>Eeve</h3>
+                <p> Jotho. Tipo Normal </p>
+                <div>
+                    <button class="btn btn-dark btn-reserva">Conócelo</button>
+                </div>
+            </div>
+
+            <div class="poke-card d-flex flex-column justify-content-between">
+                <h3>Furret</h3>
+                <p> Kanto de tipo Normal </p>
+                <div>
+                    <button class="btn btn-dark btn-reserva">Conócelo</button>
+                </div>
+            </div>
+            
+            <div class="poke-card d-flex flex-column justify-content-between">
+                <h3>Chikorita</h3>
+                <button class="btn btn-dark btn-reserva">Conócelo</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer>
+        <div class="row ">
+            <div class="col-sm-4 d-flex flex-column">
+                <a href="http://www.twitter.com"> Twitter </a>
+                <a href="http://www.facebook.com"> Facebook </a>
+                <a href="http://www.instagram.com"> Instagram </a>
+            </div>
+            
+            <div class="col-sm-4 d-flex flex-column">
+                <h4 class="display-6"> Dirección </h4>
+                <address> 
+                    <p> Ciudad de México, México </p>
+                    <p>masterpokemon@pokeweb.com </p>
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                <a href=#> Nosotros </a>
+                <a href=#> Contacto </a>
+                <a href=#> Acerca de  </a>
+            </div>
+        </div>
+    </footer>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js" ></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>
