@@ -7,17 +7,15 @@
 /* Cada item tenga un mismo comportamiento */
 /* Cuando se usa flex, no tiene sentido utilizar las clases de bootstrap para columnas*/
 .poke-card{
-    flex: 1 275px;
-    padding: 1em 1em 1em 1em;
-    margin: 1em 0 0 0;
+    flex: 1 200px;
+    padding: 0 0 0 0;
+    margin: 1em 1em 1em 1em;
 }
 
 .poke-card .btn-reserva{
     width: 100%;
-    /*
-    position: absolute;
-    left:0;
-    bottom:0;*/
+    /* Bordes redondos > 0*/
+    border-radius: 2px;
 }
 
 footer{
