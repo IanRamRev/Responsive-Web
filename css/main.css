@@ -1,6 +1,7 @@
 .jumbotron{
     background-color: red;
     color: white;
+    margin-top: 3.5em;
 }
 
 /* Cada item tenga un mismo comportamiento */
