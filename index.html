@@ -15,7 +15,6 @@
   </head>
 
 <body>
-
     <!-- Barra de navegación -->
     <!-- fixed-top permite que la barra quede fija en la posición de arriba-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -39,7 +38,7 @@
     </nav>
 
     <div class="jumbotron">
-      <h1 class="display-4">Pokeweb!</h1>
+        <h1 class="display-4">Pokeweb!</h1>
     </div>
 
     <div class="container">
@@ -48,12 +47,12 @@
                 <li class="breadcrumb-item active" aria-current="page"> Inicio </li>
             </ol>
         </nav>
-        <div class="d-flex">
+
+        <div class="row">
             <div class="col-sm-4">
                 <h2 class="display-5">Pokedex</h2>
                 <p>Conoce todos los pokemones registrados</p>
             </div>
-
             <div class="col-sm-4">
                 <h2 class="display-5">Tipos de pokemon</h2>
                 <p>Elemento principal de cada pokemon</p>
@@ -66,11 +65,9 @@
 
         <hr> <!-- Línea divisora-->
 
-        <!-- flex-wrap ajusta los elementos dentro del ancho del contenedor -->
-        <!-- flex-row-reverse elementos de izquierda a derecha-->
+        <img src="Images/pokemon.jpg" alt="pokemon_png" class="img-fluid">
+
         <div class="d-flex flex-wrap flex-row-reverse" >
-            <!-- justify-content-between sirve para, si el contenido no cubre todo el alto, el espacio en blanco se coloca
-                en medio del contenido -->
             <div class="card poke-card d-flex flex-column justify-content-between">
                 <div class="card-header">
                     Región Kanto
@@ -143,7 +140,7 @@
                 </div>
             </div>
             
-            <div class="poke-card d-flex flex-column justify-content-between">
+            <div class=" card poke-card d-flex flex-column justify-content-between">
                 <div class="card-header">
                     Región Kanto
                 </div>
@@ -156,9 +153,8 @@
         </div>
     </div>
 
-    
     <footer>
-        <div class="row ">
+        <div class="row">
             <div class="col-sm-4 d-flex flex-column">
                 <a href="http://www.twitter.com"> Twitter </a>
                 <a href="http://www.facebook.com"> Facebook </a>
@@ -179,6 +175,8 @@
             </div>
         </div>
     </footer>
+
+
     
 
     <!-- Optional JavaScript -->
