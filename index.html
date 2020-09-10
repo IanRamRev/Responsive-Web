@@ -90,8 +90,10 @@
                     Región Kanto
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title display-5"> Charmander  </h5>
-                    <img src="Images/Charmander.png" class="card-img-top" alt="charmender_img">
+                    <h5 class="card-title display-5" data-toggle="popover" data-content=" Es uno de los Pokémon iniciales que pueden elegir los entrenadores que empiezan su aventura en la región Kanto, junto a Squirtle y Bulbasaur" title="¿Sabías que?"> 
+                        Charmander  
+                    </h5>
+                    <img src="Images/Charmander.png" class="card-img-top" alt="charmender_img" data-toggle="tooltip" data-placement="top" title="Hitokage">
                     <!-- <h6 class="card-subtitle text-muted display-6"> Región Kanto</h6> -->
                     <p class="card-text"> Tipo Fuego </p>
                 </div>
@@ -102,9 +104,9 @@
 
             <div class="card poke-card d-flex flex-column justify-content-between"> 
                 <div class="card-body">
-                    <h5 class="card-title display-5">Bulbasaur</h5>
+                    <h5 class="card-title display-5" data-toggle="popover" data-content=" Es uno de los Pokémon iniciales que pueden elegir los entrenadores que empiezan su aventura en la región Kanto, junto a Squirtle y Charmander" title="¿Sabías que?">Bulbasaur</h5>
                     <h6 class="card-subtitle text-muted display-6"> Región Kanto </h6>
-                    <img src="Images/Bulbasaur.png" alt="bulbasaur_img" class="card-img-top">
+                    <img src="Images/Bulbasaur.png" alt="bulbasaur_img" class="card-img-top" data-toggle="tooltip" data-placement="top" title="Fushigidane">
                     <p class="card-text"> Tipo Planta</p>
                 </div>
                 <div>
@@ -114,9 +116,9 @@
 
             <div class="card poke-card d-flex flex-column justify-content-between">
                 <div class="card-body">
-                    <h5 class="card-title display-5">Squirtle</h5>
+                    <h5 class="card-title display-5" > Squirtle</h5>
                     <h6 class="card-subtitle text-muted display-6"> Región Kanto </h6>
-                    <img src="Images/Squirtle.png" alt="squirtle_img" class="card-img-top">
+                    <img src="Images/Squirtle.png" alt="squirtle_img" class="card-img-top" data-toggle="tooltip" data-placement="top" title="Zenigame">
                     <p class="card-text">  Mejor conocido como vamo a calmarno de tipo Agua </p>
                 </div>
                 <div>
@@ -126,7 +128,7 @@
 
             <div class="card poke-card d-flex flex-column justify-content-between">
                 <div class="card-body">
-                    <h5 class="card-title display-5"> Pikachu </h5>
+                    <h5 class="card-title display-5" data-toggle="popover" data-content="Es el Pokémon más conocido de la historia, mayormente por ser el acompañante del protagonista del anime, Ash Ketchum y la mascota representante de la franquicia Pokémon." title="¿Sabías que?"> Pikachu </h5>
                     <h6 class="card-subtitle text-muted display-6"> Región Kanto </h6>
                     <img src="Images/Pikachu.png" alt="pikachu_img" class="card-img-top">
                     <p class="card-text"> Este es el primer pokemon y compañero de tipo Eléctrico del protagonista de Pokemon Ash </p>
@@ -138,9 +140,9 @@
 
             <div class="card poke-card d-flex flex-column justify-content-between">
                 <div class="card-body">
-                    <h5 class="card-title display-5">Eeve</h5>
+                    <h5 class="card-title display-5" data-toggle="popover" data-content="Es el único Pokémon que cambia completamente su tipo al evolucionar" title="¿Sabías que?">Eeve</h5>
                     <h6 class="card-subtitle text-muted display-6"> Región Kanto </h6>
-                    <img src="Images/Eevee.png" alt="eeve_img" class="card-img-top">
+                    <img src="Images/Eevee.png" alt="eeve_img" class="card-img-top" data-toggle="tooltip" data-placement="top" title="Eievui">
                     <p class="card-text"> Tipo Normal. Presenta multiples evoluciones </p>
                 </div>
                 <div>
@@ -165,11 +167,11 @@
                     Región Johto
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title display-5">Chikorita</h5>
-                    <img src="Images/Chikorita.png" alt="chikorita_img" class="card-img-top">
+                    <h5 class="card-title display-5" data-toggle="popover" data-content="Conoce sus características" title="Información">Chikorita</h5>
+                    <img src="Images/Chikorita.png" alt="chikorita_img" class="card-img-top" >
                     <p class="card-text"> Tipo planta</p>
                 </div>
-                <button class="btn btn-dark btn-reserva">Conócelo</button>
+                <button class="btn btn-dark btn-reserva" >Conócelo</button>
             </div>
         </div>
     </div>
@@ -200,11 +202,21 @@
 
     
 
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js" ></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
+
+    <!-- Tooltip -->
+    <script>
+        $(function(){
+            $("[data-toggle='tooltip']").tooltip();
+            $("[data-toggle='popover']").popover();
+        });
+    </script>
+
 </body>
 
 </html>
