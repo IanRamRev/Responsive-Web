@@ -1,6 +1,14 @@
+$rojo: #ff4400;
+
+@mixin margenes($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
 .jumbotron{
     background-color: $rojo;
     color: white;
+    @include margenes(3.5em, 1em)
     margin-top: 3.5em;
 }
 
@@ -25,7 +33,7 @@
 
 footer{
     padding: 10px 10px 0 10px;
-    background-color: slategrey;
+    background-color: $rojo;
     margin-bottom: 0px;
     margin-top: 2rem;
 }
