@@ -11,7 +11,8 @@
     "watch:scss": "onchange css/*.scss -- npm run scss",
     "clean": "rimraf dist",
     "imagemin": "imagemin Images/* --out-dir dist/Images",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin pokedex.html -d dist --htmlmin -o dist/pokedex.html && usemin tipos.html -d dist --htmlmin -o dist/tipos.html && usemin tablaPoder.html -d dist --htmlmin -o dist/tablaPoder.html && usemin nosotros.html -d dist --htmlmin -o dist/nosotros.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html"
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin pokedex.html -d dist --htmlmin -o dist/pokedex.html && usemin tipos.html -d dist --htmlmin -o dist/tipos.html && usemin tablaPoder.html -d dist --htmlmin -o dist/tablaPoder.html && usemin nosotros.html -d dist --htmlmin -o dist/nosotros.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html",
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
