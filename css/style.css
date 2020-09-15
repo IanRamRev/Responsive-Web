@@ -1,5 +1,5 @@
 .jumbotron {
-  background-color: #f72e2e;
+  background-color: #f74e30;
   color: white;
   margin-top: 3.5em;
   margin-bottom: 1em;
@@ -22,7 +22,7 @@
 
 footer {
   padding: 10px 10px 0 10px;
-  background-color: #f72e2e;
+  background-color: #f74e30;
   margin-bottom: 0px;
   margin-top: 2rem; }
 
@@ -31,3 +31,5 @@ footer {
 
 .tab-content {
   margin-top: 1em; }
+
+/*# sourceMappingURL=style.css.map */
