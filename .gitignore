@@ -3,5 +3,7 @@ Images
 .sass-cache/
 nvm-setup
 dist
+pokeweb
+
 
 *.txt
